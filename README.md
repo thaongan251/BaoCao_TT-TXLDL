@@ -9,11 +9,11 @@
   * CN. Lưu Thanh Sơn
 
 ## Thông tin nhóm
-STT | Họ tên | MSSV
---- | -------|------
-1 | Thái Minh Triết | 19522397
-2 | Chu Hà Thảo Ngân | 19521882
-3 | Võ Tuấn Anh | 19521226
+STT | Họ tên | MSSV | Github
+--- | -------|------|--------
+1 | Thái Minh Triết | 19522397 | https://github.com/minhtriet2507
+2 | Chu Hà Thảo Ngân | 19521882 | https://github.com/thaongan251
+3 | Võ Tuấn Anh | 19521226 | https://github.com/VOTUANANH01
 
 ## Đề tài báo cáo
 **Xây dựng bộ dữ liệu QnA Tiếng Việt về Covid-19 và các vấn đề liên quan**
