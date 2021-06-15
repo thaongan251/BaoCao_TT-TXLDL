@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.6.6)  14 JUN 2021 20:45
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.6.6)  16 JUN 2021 00:03
 entering extended mode
 **BaoCaoDS103.tex
 (D:\__UIT\HK4\DS103_TN&TXLDL\BaoCao_TT-TXLDL\BaoCaoDS103.tex
@@ -653,23 +653,23 @@ Package epstopdf Info: Source file: <fig1.eps>
 (epstopdf)                    size: 26464 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig1-eps-converted-to.pdf f
 ig1.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig1-eps-converted-to.pdf, id=15, 345.29pt x 142.5325pt>
+<fig1-eps-converted-to.pdf, id=14, 345.29pt x 142.5325pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig1-eps-converted-to.pdf> [2 <D:/__UIT/HK4/DS103_TN&TXLDL/BaoCao_TT-TXLDL
-/fig1-eps-converted-to.pdf>] [3]
+<use fig1-eps-converted-to.pdf> [2] [3 <D:/__UIT/HK4/DS103_TN&TXLDL/BaoCao_TT-T
+XLDL/fig1-eps-converted-to.pdf>] [4]
 (D:\__UIT\HK4\DS103_TN&TXLDL\BaoCao_TT-TXLDL\BaoCaoDS103.aux) ) 
 Here is how much of TeX's memory you used:
  2604 strings out of 495285
  32554 string characters out of 3179870
- 89157 words of memory out of 3000000
+ 90157 words of memory out of 3000000
  5747 multiletter control sequences out of 15000+200000
  19882 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,8n,23p,1241b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,8n,23p,1242b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program File
 s (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files 
 (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x8
@@ -684,9 +684,9 @@ nr/vnbx9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/vnr10.pfb
 Files (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/vnti10.pfb><C:/Program Files (x86)
 /MiKTeX 2.8/fonts/type1/vntex/vnr/vnti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/
 fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on BaoCaoDS103.pdf (3 pages, 183194 bytes).
+Output written on BaoCaoDS103.pdf (4 pages, 192312 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,7 @@
 
 \begin{document}
 %
-\title{Xây dựng bộ dữ liệu QnA Tiếng Việt về COVID-19 và các vấn đề liên quan \thanks{Hướng dẫn bởi TS. Nguyễn Gia Tuấn Anh và CN. Lưu Thanh Sơn}}
+\title{Xây dựng bộ dữ liệu Q\&A Tiếng Việt về COVID-19 và các vấn đề liên quan \thanks{Hướng dẫn bởi TS. Nguyễn Gia Tuấn Anh và CN. Lưu Thanh Sơn}}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -28,7 +28,7 @@
 Chu Hà Thảo Ngân\orcidID{19521882} \and
 Võ Tuấn Anh\orcidID{19521226}}
 %
-\authorrunning{F. Author et al.}
+%\authorrunning{F. Author et al.}
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
@@ -39,7 +39,7 @@ Võ Tuấn Anh\orcidID{19521226}}
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-Tính đến nay, dịch COVID-19 đã xuất hiện ở Việt Nam tại 40 tỉnh thành với hơn 10000 ca nhiễm, do đó đòi hỏi chúng ta phải triển khai quyết liệt các biện pháp phòng chống COVID-19. Trước tình hình này, các Trung tâm kiểm soát \& phòng ngừa dịch bệnh, Học viên Quân Y đã nhanh chống biên soạn tài liệu hướng dẫn kỹ thuật và giáo dục cộng đồng cho hoạt động phòng chống COVID-19. Với mong muốn góp phần giúp người dân Việt Nam có thể tra cứu bộ câu hỏi chung dịch bệnh, chúng tôi tiến hành xây dựng bộ dữ liệu QnA Tiếng Việt về COVID-19 và các vấn đề liên quan để phục vụ cho bài toán tra cứu. Bài toán chúng tôi được thực hiện bằng cách thu nhập khoảng 400 câu hỏi đáp Tiếng Việt từ các website Trung tâm kiểm soát \& phòng ngừa dịch bệnh. Sau đó tiến hành tiền xử lý dữ liệu, đánh giá bộ dữ liệu và cho ra bộ dữ liệu tidy data giúp cho cộng đồng hiểu biết đầy đủ về dịch bệnh và tuân thủ tốt các biện pháp phòng chồng dịch.
+Tính đến nay, dịch COVID-19 đã xuất hiện ở Việt Nam tại 40 tỉnh thành với hơn 10000 ca nhiễm, do đó đòi hỏi chúng ta phải triển khai quyết liệt các biện pháp phòng chống COVID-19. Trước tình hình này, các Trung tâm kiểm soát \& phòng ngừa dịch bệnh, Học viên Quân Y đã nhanh chống biên soạn tài liệu hướng dẫn kỹ thuật và giáo dục cộng đồng cho hoạt động phòng chống COVID-19. Với mong muốn góp phần giúp người dân Việt Nam có thể tra cứu bộ câu hỏi chung dịch bệnh, chúng tôi tiến hành xây dựng bộ dữ liệu Q\&A Tiếng Việt về COVID-19 và các vấn đề liên quan để phục vụ cho bài toán tra cứu. Bài toán chúng tôi được thực hiện bằng cách thu nhập khoảng 400 câu hỏi đáp Tiếng Việt từ các website Trung tâm kiểm soát \& phòng ngừa dịch bệnh. Sau đó tiến hành tiền xử lý dữ liệu, đánh giá bộ dữ liệu và cho ra bộ dữ liệu tidy data giúp cho cộng đồng hiểu biết đầy đủ về dịch bệnh và tuân thủ tốt các biện pháp phòng chồng dịch.
 
 
 \keywords{Câu hỏi đáp về dịch COVID-19  \and Thu nhập dữ liệu \and Another keyword.}
@@ -48,6 +48,14 @@ Tính đến nay, dịch COVID-19 đã xuất hiện ở Việt Nam tại 40 t�
 %
 %
 \section{Giới thiệu chung}
+
+Sự bùng phát dịch bệnh COVID-19 được tuyên bố là tình trang y tế cộng đồng khẩn cấp, virus này đã lây lan nhiều quốc gia và nhiều vùng lãnh khổ, đây là tình trạng gây quan ngại quốc tế. Việc cộng đồng nắm được thông tin và diễn biến của COVID-19 đóng vai trò quan trọng, giúp cộng đồng hiểu rõ về dịch bệnh, giảm đi sự lo lắng cũng như có kiến thức cho cộng đồng hành động ngăn ngừa sự lan rộng của dịch bệnh.
+
+Trước tình hình này, Tổ chức Y tế Thế giới WHO, Trung tâm kiểm soát \& phòng ngừa dịch bệnh CDC, Bộ Y tế và Quân Y và nhiều Cổng thông tin đã nhanh chống biên soạn tài liệu hướng dẫn kỹ thuật và giáo dục cộng đồng cho hoạt động phòng chống COVID-19. Tuy trong bối cảnh nội dung số phát triển hiện nay, nhu cầu tìm kiếm, tra cứu và truy xuất thông tin chính xác, đẩy đủ và kịp thời là hơn bao giờ hết, nhưng phần đông người dân Việt Nam chưa chủ động tra cứu thông tin hoặc đang tiếp cận thông tin trên những trang không chính thống. Với mong muốn góp phần giúp người dân Việt Nam có thể tra cứu thông tin nhanh và chính xác về dịch bệnh , chúng tôi tiến hành xây dựng bộ dữ liệu Q\&A Tiếng Việt về COVID-19 và các vấn đề liên quan để phục vụ cho bài toán tra cứu.
+
+Thách thức của bài toán chúng tôi là xây dựng một cẩm nang phải có tính nhất quán, chính xác và kịp thời các thông tin về vấn đề COVID-19 hiện nay. Từ kết quả đạt được, bộ dữ liệu chúng tôi đã xây dựng nhằm mục đích cung cấp thông tin đến cộng đồng một cách rõ ràng, mang tính hành động trong công tác ngăn ngừa, phát hiện sớm và kiểm soát COVID-19 trong cộng đồng. 
+ 
+Trong bài báo cáo này, chúng tôi tập trung xây dựng bộ dữ liệu những câu hỏi đáp thường gặp về COVID-19 trên ngôn ngữ tiếng Việt. Cấu trúc bài báo cáo được trình bày như sau: Ở mục 2, chúng tôi trình bày chi tiết phương pháp thu nhập và quá trình xây dựng bộ dữ liệu. Ở mục 3, chúng tôi tiếp cận bộ dữ liệu và thực hiện tiền xử lý dữ liệu. Kết quả chúng tôi thu được là bộ dữ liệu tidy data sẽ được trình bày ở mục 4. Và cuối cùng ở mục 5 là kết luận và hướng phát triển.
 
 \section{Phương pháp thu nhập}
 
