@@ -20,3 +20,10 @@ STT | Họ tên | MSSV | Github
 
 ## Source Code
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1967YdWa_see-EDOW7OcAvpUjeQBHQRUt#scrollTo=rGAhb81MpKfP)
+
+## Tài liệu tham khảo
+
+1. https://github.com/abachaa/MedQuAD
+2. https://www.aclweb.org/anthology/P19-1090.pdf
+3. https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-3119-4.pdf
+4. https://arxiv.org/pdf/2009.13081.pdf
