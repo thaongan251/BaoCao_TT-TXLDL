@@ -16,7 +16,10 @@ STT | Họ tên | MSSV | Github
 3 | Võ Tuấn Anh | 19521226 | https://github.com/VOTUANANH01
 
 ## Đề tài báo cáo
-**Xây dựng bộ dữ liệu Q&A Tiếng Việt về Covid-19 và các vấn đề liên quan**
+**Xây dựng bộ dữ liệu Hỏi đáp cho Tiếng Việt về Covid-19**
+
+## Mục tiêu đề tài
+**Xây dựng bộ dữ liệu Hỏi đáp về Covid-19 để phục vụ việc tra cứu và phục vụ cho bài toán Hỏi đáp tự động**
 
 ## Source Code
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1967YdWa_see-EDOW7OcAvpUjeQBHQRUt#scrollTo=rGAhb81MpKfP)

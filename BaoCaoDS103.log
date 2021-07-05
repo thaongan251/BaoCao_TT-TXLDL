@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.5.30)  1 JUL 2021 14:31
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.5.30)  5 JUL 2021 12:51
 entering extended mode
 **BaoCaoDS103.tex
 
@@ -627,26 +627,26 @@ LaTeX Font Info:    ... okay on input line 19.
 \everyMPtoPDFconversion=\toks22
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 39.
+(Font)              <14.4> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
+(Font)              <7> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 39.
-LaTeX Font Info:    Try loading font information for T5+cmtt on input line 39.
+(Font)              <5> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 47.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 47.
+LaTeX Font Info:    Try loading font information for T5+cmtt on input line 47.
  (E:\Program_Data\Miktex_2.8\tex\latex\vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 39.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
 
 (E:\Program_Data\Miktex_2.8\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
  [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
@@ -658,10 +658,10 @@ Package epstopdf Info: Source file: <fig1.eps>
 (epstopdf)                    size: 26464 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig1-eps-converted-to.pdf f
 ig1.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 119.
 Package epstopdf Info: Output file is already uptodate.
 
-<fig1-eps-converted-to.pdf, id=14, 345.29pt x 142.5325pt>
+<fig1-eps-converted-to.pdf, id=15, 345.29pt x 142.5325pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig1-eps-converted-to.pdf> [2] [3 <D:/#UIT_Documents/#HK2_2020_2021/Thu th
@@ -676,22 +676,23 @@ Here is how much of TeX's memory you used:
  5747 multiletter control sequences out of 15000+200000
  19882 words of font info for 44 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,8n,23p,1242b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,8n,23p,894b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
 <E:/Program_Data/Miktex_2.8/fonts/type1/public/am
 sfonts/cm/cmmi10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm
 /cmmi6.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmmib10.p
 fb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Pro
-gram_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/Program_Data/M
-iktex_2.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb><E:/Program_Data/Miktex_2.8/
-fonts/type1/vntex/vnr/vnbx10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/
-vnr/vnbx12.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnbx9.pfb><E:/
-Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnr10.pfb><E:/Program_Data/Miktex
-_2.8/fonts/type1/vntex/vnr/vnr9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vnt
-ex/vnr/vnti10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnti9.pfb><
-E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on BaoCaoDS103.pdf (4 pages, 192380 bytes).
+gram_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Program_Data/M
+iktex_2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/Program_Data/Miktex_2.8/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1
+/vntex/vnr/vnbx10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnbx12.
+pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnbx9.pfb><E:/Program_Dat
+a/Miktex_2.8/fonts/type1/vntex/vnr/vnr10.pfb><E:/Program_Data/Miktex_2.8/fonts/
+type1/vntex/vnr/vnr9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnti
+10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnti9.pfb><E:/Program_
+Data/Miktex_2.8/fonts/type1/vntex/vnr/vntt9.pfb>
+Output written on BaoCaoDS103.pdf (4 pages, 200027 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
