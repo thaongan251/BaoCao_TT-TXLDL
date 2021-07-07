@@ -5,6 +5,11 @@
 
 \documentclass[runningheads]{llncs}
 %
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,menucolor=black,runcolor=black,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage{breakurl}
+
+\usepackage{multirow}
+\usepackage{longtable}
 \usepackage[utf8]{inputenc}
 \usepackage[utf8]{vietnam}
 \usepackage{graphicx}
@@ -72,8 +77,109 @@ Trong bài báo cáo này, chúng tôi tập trung xây dựng bộ dữ liệu 
 \section{Tiền xử lý dữ liệu}
 
 \section{Bộ dữ liệu tidy data}
+Sau khi quá trình thu nhập từ các nguồn ở mục và thực hiện tiền xử lí ở mục 3, kết quả thu được là bộ dữ liệu hoàn chỉnh về các câu hỏi và trả lời sử dụng ngôn ngữ tiếng Việt liên quan tới dịch COVID-19 gồm 620 điểm dữ liệu. Bảng~\ref{tab1} thể hiện ví dụ các điểm dữ liệu được trích ra từ bộ dữ liệu và bảng~\ref{tab2} biểu diễn codebook của bộ dữ liệu.
+
+\begin{longtable} 	{|p{1cm}|p{0.5\textwidth}|p{0.5\textwidth}|}
+	\caption{Ví dụ các điểm dữ liệu của bộ dữ liệu }\label{tab1}\\
+	%\begin{tabular}
+	%{|l|l|l|}
+	\hline
+	id & Question & Answer\\
+	\hline
+	QA1&
+	Tại sao bệnh này lại được gọi là .. COVID-19?
+	&Vào ngày 11 tháng 2 năm 2020, Tổ Chức Y Tế Thế Giới ... \\
+	\hline
+	
+	QA607&Covid-19 ... truyền qua nước uống không?&Covid-19 không thể lây truyền ... qua nước uống.\\
+	\hline
+
+	QA339&Nên duy trì chế độ ăn...phòng chống Covid-19?&Không có chế độ ăn ... riêng với Covid-19  \\
+	\hline
+	QA127&... xử lý rác thải là trang bị bảo hộ cá nhân ...?&Thải bỏ PPE vào thùng rác. Rác thải tại  ... khử trùng.\\
+	\hline
+	QA122&Khẩu trang vải có giống ... (PPE) không?&Không, khẩu trang vải không phải là ... (PPE)...\\
+	
+	
+	\hline
+
+\end{longtable}
+
+
+\begin{longtable}{| p{0.5\textwidth}| p{0.5\textwidth}|}
+	\caption{Codebook của bộ dữ liệu}
+	\label{tab2}\\
+
+	\hline
+	Thông tin& Nội dung\\
+
+	\hline
+	
+	Tên bộ dữ liệu & Covid-19{\_Q\&A}\\
+
+	\hline
+	
+	\multirow{26}{5cm}
+	{Nguồn thu nhập và cách thu nhập}& 
+	Bộ dữ liệu được thu nhập tự động qua các nguồn trang web\\
+	 &- CDC:\\
+	 &
+	 +\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/faq.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/vaccines/faq.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/travelers/faqs.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/community/general-business-faq.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/community/retirement/faq.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/community/correction-detention/faq.html}\\
+	&+\url{ttps://vietnamese.cdc.gov/coronavirus/2019-ncov/community/large-events/event-planners-and-attendees-faq.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/liver-disease.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/community/tribal/faq-burial-practice.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/hiv.html}\\
+	&+\url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/community/medicolegal-faq.html}\\
+	\\
+	&-VNVC:\\
+	&+\url{https://vnvc.vn/cau-hoi-thuong-gap-covid-19/}\\
+	\\
+	&-Cục Quân Y:\\ 
+	&+url{http://asttmoh.vn/wp-content/uploads/2020/03/100-cau-hoi-dap-ve-dich-Covid-19-Cuc-QY-Final.pdf}\\
+	\\
+	&-Bộ GDĐT:\\
+	&+\url{https://moet.gov.vn/content/tintuc/Lists/News/Attachments/6507/1582974693976755.pdf}\\
+	\\
+	&- Cổng thông tin chính sách của chính phủ:\\
+	&+\url{https://chinhsachonline.chinhphu.vn/Cau-hoi-chon-loc/Hoi-dap-ve-dich-Covid19/14/trang1.vgp}\\
+	\\
+	&-VinMec:\\
+	&+https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dich-2019-ncov/tu-van-bac-si/hoi-dap-ve-dich-virus-corona-2019- \\
+	&phan-8-lay-nhiem-covid-19-o-tre-em-
+	\\ 
+	&phu-nu-mang-thai 
+	-tre-so-sinh-
+	va-ba-me-
+	\\
+	&cho-con-bu/\\
+	
+	\hline
+	
+	Số thuộc tính & 3\\
+	\hline
+	
+	\multirow{3}{5 cm}
+	{Thông tin các thuộc tính} & 
+	id: định danh câu hỏi đáp\\
+	&Question: câu hỏi\\
+	&Answe: câu trả lời\\
+	\hline
+	
+	%\end{tabularx}
+\end{longtable}
+
+
+
 
 \section{Kết luận và hướng phát triển}
+Trong bài báo cáo, nhóm đã trình bày quá trình xây dựng bộ dữ liệu về câu hỏi đáp liên quan tới COVID-19 gồm 620 câu hỏi và câu trả lời.
+
+Từ kết quả đã có, trong tương lai nhóm sẽ thực hiện phân tích và tiếp tục xây dựng bộ dữ liệu với mong muốn bộ dữ liệu kích thước lớn hơn, tăng thêm tính kịp thời, tin cậy và chính xác phù hợp với tình hình dịch bệch COVID-19 diễn biến phức tạp trên thế giới và Việt Nam đồng thời cung cấp, bổ sung thông tin về vấn đề vắc-xin COVID-19 đang được quan tâm hàng đầu hiện nay. Từ đó bộ dữ liệu có thể thích hợp cho những bài toán về ngôn ngữ tự nhiên sử dụng ngôn ngữ là tiếng Việt như xây dựng hệ thống hỏi đáp tự động, ... 
 \subsection{A Subsection Sample}
 Please note that the first paragraph of a section or subsection is
 not indented. The first paragraph that follows a table, figure,
@@ -87,11 +193,11 @@ they are formatted as run-in headings.
 
 \paragraph{Sample Heading (Fourth Level)}
 The contribution should contain no more than four levels of
-headings. Table~\ref{tab1} gives a summary of all heading levels.
+headings. Table~\ref{tab3} gives a summary of all heading levels.
 
 \begin{table}
 \caption{Table captions should be placed above the
-tables.}\label{tab1}
+tables.}\label{tab3}
 \begin{tabular}{|l|l|l|}
 \hline
 Heading level &  Example & Font size and style\\

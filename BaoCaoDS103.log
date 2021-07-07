@@ -1,20 +1,16 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.5.30)  5 JUL 2021 14:43
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.6.7)  7 JUL 2021 17:49
 entering extended mode
 **BaoCaoDS103.tex
-
-("D:\#UIT_Documents\#HK2_2020_2021\Thu thap  va Tien xu ly du lieu\BT_Lon\BaoCa
-o_TT-TXLDL\BaoCaoDS103.tex"
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\BaoCaoDS103.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
 rman, ngerman, german-x-2009-06-19, ngerman-x-2009-06-19, french, loaded.
-
-("D:\#UIT_Documents\#HK2_2020_2021\Thu thap  va Tien xu ly du lieu\BT_Lon\BaoCa
-o_TT-TXLDL\llncs.cls"
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\llncs.cls
 Document Class: llncs 2018/03/10 v2.20 
  LaTeX document class for Lecture Notes in Computer Science
-(E:\Program_Data\Miktex_2.8\tex\latex\base\article.cls
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(E:\Program_Data\Miktex_2.8\tex\latex\base\size10.clo
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\size10.clo"
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -29,7 +25,7 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\tools\multicol.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\tools\multicol.sty"
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \c@tracingmulticols=\count87
 \mult@box=\box26
@@ -76,10 +72,10 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \mult@nat@firstbox=\box50
 \colbreak@box=\box51
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\oberdiek\aliascnt.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\aliascnt.sty"
 Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
 
-(E:\Program_Data\Miktex_2.8\tex\latex\carlisle\remreset.sty))
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\carlisle\remreset.sty"))
 \c@chapter=\count95
 LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
 LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
@@ -131,19 +127,177 @@ LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
 \c@remark=\count114
 \headlineindent=\dimen123
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\base\inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2009/11/20 v6.79g Hypertext links for LaTeX
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\utf8.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ifxetex\ifxetex.sty"
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\hycolor.sty"
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\xcolor-patch.sty"
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen124
+\Hy@linkcounter=\count115
+\Hy@pagecounter=\count116
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2009/11/20 v6.79g Hyperref: PDFDocEncoding definition (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 2911.
+Package hyperref Info: Option `bookmarks' set `true' on input line 2911.
+Package hyperref Info: Hyper figures OFF on input line 3022.
+Package hyperref Info: Link nesting OFF on input line 3027.
+Package hyperref Info: Hyper index ON on input line 3030.
+Package hyperref Info: Plain pages OFF on input line 3037.
+Package hyperref Info: Backreferencing OFF on input line 3042.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3238.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3475.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bitset.sty"
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\intcalc.sty"
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\bigintcalc.sty"
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count117
+\Field@Width=\dimen125
+\Fld@charsize=\dimen126
+\Field@toks=\toks19
+Package hyperref Info: Hyper figures OFF on input line 4424.
+Package hyperref Info: Link nesting OFF on input line 4429.
+Package hyperref Info: Hyper index ON on input line 4432.
+Package hyperref Info: backreferencing OFF on input line 4439.
+Package hyperref Info: Link coloring ON on input line 4442.
+Package hyperref Info: Link coloring with OCG OFF on input line 4449.
+Package hyperref Info: PDF/A mode OFF on input line 4454.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count118
+\c@Item=\count119
+\c@Hfootnote=\count120
+)
+*hyperref using default driver hpdftex*
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2009/11/20 v6.79g Hyperref driver for pdfTeX
+\Fld@listcount=\count121
+\c@bookmark@seq@number=\count122
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\breakurl\breakurl.sty"
+Package: breakurl 2009/01/24 v1.30 Breakable hyperref URLs
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\generic\xkeyval\xkeyval.tex"
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+\XKV@depth=\count123
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+
+Package breakurl Warning: You are using breakurl while processing via pdflatex.
+
+(breakurl)                \burl will be just a synonym of \url.
+(breakurl)                 on input line 47.
+
+) ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen127
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip45
+\LTright=\skip46
+\LTpre=\skip47
+\LTpost=\skip48
+\LTchunksize=\count124
+\LTcapwidth=\dimen128
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@cols=\count125
+\LT@rows=\count126
+\c@LT@tables=\count127
+\c@LT@chunks=\count128
+\LT@p@ftn=\toks22
+)
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks23
+\inpenc@posthook=\toks24
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\t1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -293,7 +447,7 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\ot1enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -324,7 +478,7 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\omsenc.dfu
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -337,6 +491,8 @@ Now handling font encoding OMX ...
 ... no UTF-8 mapping file for font encoding OMX
 Now handling font encoding U ...
 ... no UTF-8 mapping file for font encoding U
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
    defining Unicode char U+00A9 (decimal 169)
    defining Unicode char U+00AA (decimal 170)
    defining Unicode char U+00AE (decimal 174)
@@ -348,21 +504,21 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(E:\Program_Data\Miktex_2.8\tex\latex\vntex\vietnam.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\vietnam.sty"
 Package: vietnam 2009/07/12 v1.3 support for Vietnamese
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\ifthen.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\ifthen.sty"
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\base\fontenc.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(E:\Program_Data\Miktex_2.8\tex\latex\vntex\t5enc.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\t5enc.def"
 File: t5enc.def 2006/11/21 v1.4 Vietnamese T5 encoding
 Now handling font encoding T5 ...
 ... processing UTF-8 mapping file for font encoding T5
 
-(E:\Program_Data\Miktex_2.8\tex\latex\vntex\t5enc.dfu
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\t5enc.dfu"
 File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
@@ -518,181 +674,476 @@ File: t5enc.dfu 2006/08/19 v1.1 UTF8 support for Vietnamese
 ))
 LaTeX Font Info:    Try loading font information for T5+cmr on input line 100.
 
-(E:\Program_Data\Miktex_2.8\tex\latex\vntex\t5cmr.fd
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\t5cmr.fd"
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ))
-(E:\Program_Data\Miktex_2.8\tex\latex\vntex\vncaps.tex
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\vncaps.tex"
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
-(E:\Program_Data\Miktex_2.8\tex\latex\graphics\graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(E:\Program_Data\Miktex_2.8\tex\latex\graphics\keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks20
-)
-(E:\Program_Data\Miktex_2.8\tex\latex\graphics\graphics.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\graphics.sty"
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(E:\Program_Data\Miktex_2.8\tex\latex\graphics\trig.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\00miktex\graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(E:\Program_Data\Miktex_2.8\tex\latex\pdftex-def\pdftex.def
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-\Gread@gobject=\count115
+\Gread@gobject=\count129
 ))
-\Gin@req@height=\dimen124
-\Gin@req@width=\dimen125
+\Gin@req@height=\dimen129
+\Gin@req@width=\dimen130
 )
-(E:\Program_Data\Miktex_2.8\tex\latex\oberdiek\epstopdf.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2009/10/17 v2.4 Conversion with epstopdf on the fly (HO)
 
-(E:\Program_Data\Miktex_2.8\tex\latex\oberdiek\epstopdf-base.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2009/10/17 v2.4 Base part for package epstopdf
 
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\infwarerr.sty
-Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
-)
-(E:\Program_Data\Miktex_2.8\tex\latex\oberdiek\grfext.sty
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\grfext.sty"
 Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
-)
-(E:\Program_Data\Miktex_2.8\tex\latex\oberdiek\kvoptions.sty
-Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
-
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\kvsetkeys.sty
-Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
-t (HO)
-
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\etexcmds.sty
-Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\pdftexcmds.sty
-Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
- (HO)
-
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\ifluatex.sty
-Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(E:\Program_Data\Miktex_2.8\tex\generic\oberdiek\ltxcmds.sty
-Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
-)
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
 )
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 433.
 ))
-("D:\#UIT_Documents\#HK2_2020_2021\Thu thap  va Tien xu ly du lieu\BT_Lon\BaoCa
-o_TT-TXLDL\BaoCaoDS103.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\BaoCaoDS103.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
-(E:\Program_Data\Miktex_2.8\tex\context\base\supp-pdf.tex
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\graphics\color.sty"
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+Package hyperref Info: Link coloring ON on input line 24.
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\hyperref\nameref.sty"
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count130
+)
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\BaoCaoDS103.out)
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\BaoCaoDS103.out)
+\@outlinefile=\write3
+\AtBeginShipoutBox=\box58
+
+("C:\Program Files (x86)\MiKTeX 2.8\tex\context\base\supp-pdf.tex"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen126
-\scratchbox=\box54
-\nofMPsegments=\count117
-\nofMParguments=\count118
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen127
-\MPnumerator=\count120
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count131
+\scratchdimen=\dimen131
+\scratchbox=\box59
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count134
+\MPscratchDim=\dimen132
+\MPnumerator=\count135
+\everyMPtoPDFconversion=\toks26
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 47.
+(Font)              <14.4> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 47.
+(Font)              <7> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 47.
+(Font)              <5> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 47.
+(Font)              <9> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
-LaTeX Font Info:    Try loading font information for T5+cmtt on input line 47.
- (E:\Program_Data\Miktex_2.8\tex\latex\vntex\t5cmtt.fd
+(Font)              <6> on input line 54.
+LaTeX Font Info:    Try loading font information for T5+cmtt on input line 54.
+ ("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 54.
 
-(E:\Program_Data\Miktex_2.8\tex\latex\base\omscmr.fd
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\unskip' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ocircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ocircumflex' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\texttilde+\uhorn'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\texttilde' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\dj' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textacute' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 54.
+
+
+Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciigrave' on input line 54.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 54.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
+("C:\Program Files (x86)\MiKTeX 2.8\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
  [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}]
+Overfull \hbox (1.81764pt too wide) in paragraph at lines 94--94
+[]|\T5/cmr/m/n/10 QA607| 
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 94--94
+[]|\T5/cmr/m/n/10 Covid-19 ... truy·n qua n÷îc uèng
+ []
+
+
+Overfull \hbox (1.81764pt too wide) in paragraph at lines 97--97
+[]|\T5/cmr/m/n/10 QA339| 
+ []
+
+
+Overfull \hbox (1.81764pt too wide) in paragraph at lines 99--99
+[]|\T5/cmr/m/n/10 QA127| 
+ []
+
+
+Overfull \hbox (1.81764pt too wide) in paragraph at lines 101--101
+[]|\T5/cmr/m/n/10 QA122| 
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 101--101
+[]|\T5/cmr/m/n/10 Kh©u trang v£i câ gièng ... (PPE)
+ []
+
+
+Overfull \hbox (36.8527pt too wide) in alignment at lines 82--106
+ [] [] [] 
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / vaccines /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / travelers /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / community /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / community /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / community /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 ttps : / / vietnamese . cdc .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+$\T5/cmtt/m/n/10 gov / coronavirus / 2019-[]ncov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+$\T5/cmtt/m/n/10 community / large-[]events /$
+ []
+
+
+Overfull \hbox (1.64594pt too wide) in paragraph at lines 133--134
+$\T5/cmtt/m/n/10 event-[]planners-[]and-[]attendees-[]faq .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+$\T5/cmtt/m/n/10 gov / coronavirus / 2019-[]ncov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+$\T5/cmtt/m/n/10 need-[]extra-[]precautions /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 135--136
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / community /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+$\T5/cmtt/m/n/10 gov / coronavirus / 2019-[]ncov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vietnamese . cdc . gov /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+$\T5/cmtt/m/n/10 coronavirus / 2019-[]ncov / community /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--141
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / vnvc . vn /$
+ []
+
+
+Overfull \hbox (5.59998pt too wide) in alignment at lines 109--142
+ [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+[]|\T5/cmr/m/n/10 +urlhttp://asttmoh.vn/wp-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+\T5/cmr/m/n/10 content/uploads/2020/03/100-cau-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+\T5/cmr/m/n/10 hoi-dap-ve-dich-Covid-19-Cuc-QY-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / moet . gov . vn / content /
+$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+$\T5/cmtt/m/n/10 tintuc / Lists / News / Attachments /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+[]|\T5/cmr/m/n/10 +[][]$\T5/cmtt/m/n/10 https : / / chinhsachonline .$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+$\T5/cmtt/m/n/10 chinhphu . vn / Cau-[]hoi-[]chon-[]loc /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+$\T5/cmtt/m/n/10 Hoi-[]dap-[]ve-[]dich-[]Covid19 / 14 /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+[]|\T5/cmr/m/n/10 +https://www.vinmec.com/vi/tin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\T5/cmr/m/n/10 tuc/thong-tin-suc-khoe/dich-2019-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
+\T5/cmr/m/n/10 ncov/tu-van-bac-si/hoi-dap-ve-dich-
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 155--159
+[]|\T5/cmr/m/n/10 phu-nu-mang-thai -tre-so-sinh- va-ba-
+ []
+
+
+Overfull \hbox (5.59998pt too wide) in alignment at lines 142--174
+ [] [] 
+ []
+
+[3] [4]
 Package epstopdf Info: Source file: <fig1.eps>
-(epstopdf)                    date: 2021-07-01 14:30:53
+(epstopdf)                    date: 2021-06-15 19:21:29
 (epstopdf)                    size: 357553 bytes
 (epstopdf)             Output file: <fig1-eps-converted-to.pdf>
-(epstopdf)                    date: 2021-07-01 14:30:53
+(epstopdf)                    date: 2021-06-15 19:21:29
 (epstopdf)                    size: 26464 bytes
 (epstopdf)             Command: <epstopdf --outfile=fig1-eps-converted-to.pdf f
 ig1.eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
-
-<fig1-eps-converted-to.pdf, id=15, 345.29pt x 142.5325pt>
+ <fig1-eps-converted-to.pdf, id=91, 345.29pt x 142.5325pt>
 File: fig1-eps-converted-to.pdf Graphic file (type pdf)
 
-<use fig1-eps-converted-to.pdf> [2] [3 <D:/#UIT_Documents/#HK2_2020_2021/Thu th
-ap  va Tien xu ly du lieu/BT_Lon/BaoCao_TT-TXLDL/fig1-eps-converted-to.pdf>]
-[4]
-("D:\#UIT_Documents\#HK2_2020_2021\Thu thap  va Tien xu ly du lieu\BT_Lon\BaoCa
-o_TT-TXLDL\BaoCaoDS103.aux") ) 
+<use fig1-eps-converted-to.pdf> [5] [6 <C:/Users/HP/Documents/GitHub/BaoCao_TT-
+TXLDL/fig1-eps-converted-to.pdf>]
+(C:\Users\HP\Documents\GitHub\BaoCao_TT-TXLDL\BaoCaoDS103.aux) ) 
 Here is how much of TeX's memory you used:
- 2604 strings out of 495285
- 32390 string characters out of 3180474
- 91157 words of memory out of 3000000
- 5747 multiletter control sequences out of 15000+200000
- 19882 words of font info for 44 fonts, out of 3000000 for 9000
+ 5969 strings out of 495285
+ 83548 string characters out of 3179888
+ 170653 words of memory out of 3000000
+ 9008 multiletter control sequences out of 15000+200000
+ 20193 words of font info for 45 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 41i,8n,23p,894b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
-<E:/Program_Data/Miktex_2.8/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmmib10.p
-fb><E:/Program_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Pro
-gram_Data/Miktex_2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Program_Data/M
-iktex_2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/Program_Data/Miktex_2.8/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1
-/vntex/vnr/vnbx10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnbx12.
-pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnbx9.pfb><E:/Program_Dat
-a/Miktex_2.8/fonts/type1/vntex/vnr/vnr10.pfb><E:/Program_Data/Miktex_2.8/fonts/
-type1/vntex/vnr/vnr9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnti
-10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnti9.pfb><E:/Program_
-Data/Miktex_2.8/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on BaoCaoDS103.pdf (4 pages, 199988 bytes).
+ 38i,9n,35p,894b,389s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fil
+es (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files (x
+86)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/
+MiKTeX 2.8/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiKT
+eX 2.8/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 2
+.8/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files (x86)/MiKTeX 2.8/
+fonts/type1/vntex/vnr/vnbx10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1
+/vntex/vnr/vnbx12.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/
+vnbx9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/vnr10.pfb><C
+:/Program Files (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/vnr9.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.8/fonts/type1/vntex/vnr/vnti10.pfb><C:/Program Files (x86)/Mi
+KTeX 2.8/fonts/type1/vntex/vnr/vnti9.pfb><C:/Program Files (x86)/MiKTeX 2.8/fon
+ts/type1/vntex/vnr/vntt10.pfb><C:/Program Files (x86)/MiKTeX 2.8/fonts/type1/vn
+tex/vnr/vntt9.pfb>
+Output written on BaoCaoDS103.pdf (6 pages, 238294 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 14 words of extra memory for PDF output out of 10000 (max. 10000000)
 
