@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.5.30)  8 JUL 2021 22:14
+This is pdfTeX, Version 3.1415926-1.40.10 (MiKTeX 2.8) (preloaded format=pdflatex 2021.5.30)  8 JUL 2021 23:09
 entering extended mode
 **BaoCaoDS103.tex
 
@@ -684,50 +684,50 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
  [1
 
 {C:/ProgramData/MiKTeX/2.8/pdftex/config/pdftex.map}] [2] [3] [4] [5] [6]
-Overfull \hbox (2.31316pt too wide) in paragraph at lines 314--332
+Overfull \hbox (2.31316pt too wide) in paragraph at lines 315--333
  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 59.25919pt on input line 333.
+LaTeX Warning: Float too large for page by 59.25919pt on input line 334.
 
 
-Overfull \hbox (0.71405pt too wide) in paragraph at lines 345--345
+Overfull \hbox (0.71405pt too wide) in paragraph at lines 346--346
 []|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 346--347
+Underfull \hbox (badness 10000) in paragraph at lines 347--348
 []|$\T5/cmtt/m/n/9 https : / / vietnamese . cdc . gov / coronavirus / 2019 -[] 
 ncov / faq .$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
 []|$\T5/cmtt/m/n/9 http : / / asttmoh . vn / wp -[] content / uploads / 2020 / 
 03 / 100 -[] cau -[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--350
+Underfull \hbox (badness 10000) in paragraph at lines 350--351
 []|$\T5/cmtt/m/n/9 https : / / moet . gov . vn / content / tintuc / Lists / New
 s /$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 350--351
+Underfull \hbox (badness 10000) in paragraph at lines 351--352
 []|$\T5/cmtt/m/n/9 https : / / chinhsachonline . chinhphu . vn / Cau -[] hoi -[
 ] chon -[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--352
+Underfull \hbox (badness 10000) in paragraph at lines 352--353
 []|$\T5/cmtt/m/n/9 https : / / www . vinmec . com / vi / tin -[] tuc / thong -[
 ] tin -[] suc -[]$
  []
 
 
-Overfull \hbox (5.46907pt too wide) in paragraph at lines 339--365
+Overfull \hbox (5.46907pt too wide) in paragraph at lines 340--366
  [] 
  []
 
@@ -755,7 +755,7 @@ nbx9.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnr10.pfb><E:/Progra
 m_Data/Miktex_2.8/fonts/type1/vntex/vnr/vnr9.pfb><E:/Program_Data/Miktex_2.8/fo
 nts/type1/vntex/vnr/vnti10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vn
 r/vntt10.pfb><E:/Program_Data/Miktex_2.8/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on BaoCaoDS103.pdf (10 pages, 219220 bytes).
+Output written on BaoCaoDS103.pdf (10 pages, 219609 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
