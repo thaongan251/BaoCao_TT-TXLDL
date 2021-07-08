@@ -1,0 +1,417 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+
+\documentclass[runningheads]{llncs}
+%
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{ulem}
+\usepackage[hyphens]{url}
+
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Xây dựng bộ dữ liệu Hỏi đáp cho Tiếng Việt về COVID-19\thanks{Hướng dẫn bởi TS. Nguyễn Gia Tuấn Anh và CN. Lưu Thanh Sơn}}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Thái Minh Triết\inst{1} \and
+Chu Hà Thảo Ngân\inst{2} \and
+Võ Tuấn Anh\inst{3} \and
+Lưu Thanh Sơn\inst{5} \and
+Nguyễn Gia Tuấn Anh\inst{4} 
+}
+%
+\authorrunning{Thái Minh Triết, Chu Hà Thảo Ngân , Võ Tuấn Anh}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Trường Đại học Công nghệ thông tin, Đại học quốc gia Thành phố Hồ Chí Minh \and
+Khoa Khoa học và Kỹ thuật Thông tin\\
+\email{\{\inst{1}19522397,\inst{2}19521882,\inst{3}19521226\}@gm.uit.edu.vn\\
+{\{\inst{4}sonlt,\inst{5}anhngt}\}@uit.edu.vn}}
+
+%\institute{Trường Đại học Công nghệ Thông tin, Đại học Quốc gia Thành phố Hồ chí Minh
+%\\ Khoa Khoa học và Kỹ thuật Thông tin
+%\\ \email{\{19522397,19521882,19521226\}@gm.uit.edu.vn}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+Tính đến ngày 21 - 06 - 2021, dịch COVID-19 đã xuất hiện tại 40 tỉnh thành của Việt Nam với hơn 10.000 ca nhiễm. Trước tình hình này, Trung tâm kiểm soát \& phòng ngừa dịch bệnh, Học viện Quân Y và các tổ chức y tế công cộng đã nhanh chóng biên soạn những bộ tài liệu hỏi đáp nhằm giải đáp thắc mắc của cộng đồng về COVID-19 và các vấn đề liên quan.
+Với mong muốn giúp người dân Việt Nam có thể dễ dàng tiếp cận thông tin về COVID-19 và các chính sách phòng chống dịch, chúng tôi tiến hành thu nhập các câu hỏi đáp Tiếng Việt từ website của các tổ chức y tế, trung tâm y tế công cộng và Cổng thông tin điện tử Chính phủ. Sau đó tiền xử lý, đánh giá và đưa ra bộ dữ liệu sạch để giúp cho cộng đồng có thể tra cứu thông tin về COVID-19 và các chính sách của chính phủ trong bối cảnh dịch bệnh còn đang diễn biến phức tạp. Trong tương lai, bộ dữ liệu có thể được sử dụng cho việc xây dựng các mô hình Hỏi đáp tự động, qua đó giúp người dân có thể tiếp cận thông tin một cách nhanh chóng và thuận tiện hơn.
+
+
+\keywords{COVID-19  \and Thu thập dữ liệu \and Q\&A Dataset\and Tidy Data.}
+\end{abstract}
+%
+%
+%
+\section{Giới thiệu chung}
+
+Ngày 11 - 03 - 2020, tại cuộc họp báo tại Genève,Thụy Sĩ, Tổng Giám đốc WHO Tedros Adhanom Ghebreyesus đã chính thức tuyên bố sự bùng phát của COVID-19 là đại dịch toàn cầu, trong bối cảnh virus này đã lây lan ở nhiều quốc gia và vùng lãnh thổ trên khắp thế giới. Trước tình hình đó, việc nắm rõ các thông tin, diễn biến, cũng như các chính sách của chính quyền về dịch COVID-19 đóng vai trò quan trọng, giúp cộng đồng giảm đi sự lo lắng, có kiến thức và hành động nhằm ngăn ngừa sự lan rộng của dịch bệnh.
+
+Trước tình hình số ca mắc mới COVID-19 trên thế giới không ngừng gia tăng, Tổ chức Y tế Thế giới WHO, Trung tâm kiểm soát \& phòng ngừa dịch bệnh Hoa Kỳ, Bộ Y tế, Học viện Quân Y và nhiều Cổng thông tin y tế điện tử đã nhanh chóng soạn thảo các trang hỏi đáp về COVID-19 nhằm nâng cao sự hiểu biết của cộng đồng về COVID-19 và hoạt động phòng chống dịch. 
+
+Tuy trong bối cảnh nội dung số phát triển, nhu cầu tìm kiếm, tra cứu và truy xuất thông tin chính xác, đầy đủ và kịp thời ngày một tăng lên, nhưng phần lớn người dân Việt Nam còn gặp nhiều khó khăn để có thể tiếp cận những trang tin hỏi đáp uy tín bằng tiếng Việt để giải đáp những thắc mắc của mình về đại dịch và các chính sách liên quan.
+Với mong muốn cung cấp thông tin cho người dân một cách nhanh chóng, rõ ràng và chính xác, chúng tôi tiến hành xây dựng bộ dữ liệu Hỏi đáp cho Tiếng Việt về COVID-19 để phục vụ cho bài toán tra cứu cũng như bài toán Hỏi đáp tự động trong tương lai.
+
+Thách thức đặt ra là xây dựng một bộ dữ liệu càn phải có tính nhất quán, chính xác và kịp thời các thông tin về vấn đề COVID-19 hiện nay. Từ kết quả đạt được, bộ dữ liệu chúng tôi đã xây dựng nhằm mục đích cung cấp thông tin về COVID-19 và chính sách liên quan đến cộng đồng một cách rõ ràng, mang tính hành động trong công tác ngăn ngừa, phát hiện sớm và kiểm soát COVID-19 trong cộng đồng.
+
+Trong bài báo cáo này, chúng tôi tập trung xây dựng bộ dữ liệu từ những câu hỏi đáp thường gặp về COVID-19 trên ngôn ngữ tiếng Việt. Cấu trúc bài báo cáo được trình bày như sau: Ở mục 2, chúng tôi trình bày chi tiết phương pháp thu nhập và quá trình xây dựng bộ dữ liệu. Ở mục 3, chúng tôi tiếp cận bộ dữ liệu và thực hiện tiền xử lý dữ liệu. Kết quả chúng tôi thu được là bộ dữ liệu tidy data sẽ được trình bày ở mục 4. Và cuối cùng ở mục 5 là kết luận và hướng phát triển.
+
+\section{Phương pháp thu thập}
+\subsection{Nguồn thu thập}
+Bộ dữ liệu được thu thập từ các trang hỏi đáp của những nguồn sau đây:
+
+\subsubsection{Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ}
+\begin{itemize}
+\item \textbf{Website:} \url{https://vietnamese.cdc.gov}
+\item \textbf{Giới thiệu:}
+Trung tâm kiểm soát và phòng ngừa dịch bệnh Hoa Kỳ (tiếng Anh: Centers for Disease Control and Prevention, viết tắt là CDC) là một cơ quan thuộc Bộ Y tế và Dịch vụ Nhân sinh Hoa Kỳ có trụ sở tại quận DeKalb, tiểu bang Georgia, Hoa Kỳ. Nhiệm vụ của CDC tập trung vào việc phát triển và ứng dụng hệ thống phòng ngừa và kiểm soát bệnh tật (nhất là bệnh truyền nhiễm), sức khỏe môi trường, y tế nghề nghiệp, giúp nâng cao sức khỏe người dân Hoa Kỳ. Trong bối cảnh dịch bệnh diễn biến phức tạp, CDC đã soạn thảo trang thông tin về COVID-19 nhằm giải đáp câu hỏi thường gặp và nâng cao nhận thức của người dân về đại dịch. 
+
+\item \textbf{Nội dung thu thập:} Các nội dung giải đáp và khuyến cáo mà CDC đưa ra xoay quanh chủ đề về đại dịch , bao gồm các thông tin cơ bản về COVID-19, xét nghiệm, vắc xin, du lịch, tổ chức tang lễ,...~\cite{ref_url7}. Những nội dung này đều hỗ trợ phiên bản Tiếng Việt nên phù hợp để chúng tôi xem xét đưa vào bộ dữ liệu.
+\end{itemize}
+
+
+\subsubsection{Hệ thống tiêm chủng VNVC}
+\begin{itemize}
+\item \textbf{Website:} \url{https://vnvc.vn}
+\item \textbf{Giới thiệu:}
+Hệ thống tiêm chủng VNVC (thuộc Công ty Cổ phần Vacxin Việt Nam) chính thức đi vào hoạt động từ tháng 6 năm 2017. Hệ thống tiêm chủng VNVC ra đời nhằm cung cấp cho người Việt những loại vắc xin có chất lượng tốt nhất cùng với hệ thống phòng tiêm chủng an toàn, hiện đại và cao cấp~\cite{ref_url2}. Khi dịch COVID-19 bắt đầu bùng phát ở khắp nơi trên thế giới, VNVC đã nhanh chóng tổng hợp và giải đáp 101 câu hỏi thường gặp về virus corona chủng mới.
+
+\item \textbf{Nội dung thu thập}: Các thông tin hỏi đáp cơ bản về COVID-19, sự lây lan của COVID-19, triệu chứng, cách phòng ngừa, truy vết, vệ sinh - khử trùng, xét nghiệm và vắc xin~\cite{ref_url8}.
+
+\end{itemize}
+
+\subsubsection{Học viện Quân y Việt Nam}
+\begin{itemize}
+\item \textbf{Website:} \url{http://hocvienquany.vn}
+
+\item \textbf{Giới thiệu:}
+Trước tình hình dịch bệnh diễn biến phức tạp tại Việt Nam, Tiểu ban kỹ thuật của Ban Chỉ đạo Phòng chống dịch viêm phổi cấp do chủng mới của virus Corona (Covid-19) trong Quân đội đã thống nhất đề nghị Học viện Quân y chủ trì biên soạn gấp các tài liệu hướng dẫn kỹ thuật và giáo dục cộng đồng để cung cấp ngay cho hoạt động phòng chống dịch Covid-19. Với tinh thần trách nhiệm cao, Học viện Quân y đã tập hợp các nhà khoa học, chuyên gia trong các chuyên ngành liên quan đến phòng chống dịch bệnh của Học viện tổng hợp, biên soạn và biên tập sổ tay “100 câu hỏi - đáp về dịch bệnh Covid-19”. Các thông tin khoa học này giúp người đọc có thêm hiểu biết đầy đủ hơn về dịch bệnh, từ đó thực hiện đúng hơn và tuân thủ tốt hơn các biện pháp phòng chống dịch vừa để bảo vệ bản thân vừa bảo vệ cộng đồng~\cite{ref_book1}.
+\item \textbf{Nội dung thu thập:} Bao gồm các thông tin hỏi đáp chung về dịch bệnh COVID-19, tác nhân gây bệnh, đề kháng chống virus, triệu chứng bệnh và biện pháp phòng bệnh.
+
+
+\end{itemize}
+
+\subsubsection{Bộ Giáo dục và Đào tạo}
+\begin{itemize}
+\item \textbf{Website:} \url{https://moet.gov.vn/}
+
+\item \textbf{Giới thiệu:}
+Để đảm bảo các điều kiện an toàn cho học sinh, sinh viên, học viên trở lại trường học tập sau
+thời gian tạm nghỉ học để phòng, chống dịch Covid-19, Bộ Giáo dục và
+Đào tạo phối hợp với Học viện Quân y biên soạn tài liệu “100 câu hỏi - đáp về phòng, chống dịch bệnh Covid-19 trong các cơ sở giáo dục” nhằm cung cấp cho cha mẹ học sinh (CMHS), các em học sinh, sinh
+viên (HSSV) và cán bộ nhân viên ngành Giáo dục những kiến thức cơ
+bản về dịch Covid-19, hướng dẫn thực hiện cho đúng và hiệu quả các
+biện pháp phòng chống dịch do các cơ quan chức năng triển khai,
+đồng thời có thái độ đúng mực không chủ quan nhưng cũng không
+quá lo sợ trước dịch bệnh~\cite{ref_book2}.
+\item \textbf{Nội dung thu thập:} Bao gồm các thông tin hỏi đáp chung về dịch bệnh COVID-19, hỏi đáp chung cho cha mẹ học sinh, học sinh - sinh viên, giáo viên và cán bộ giáo dục. Một số câu hỏi đáp trong tài liệu này có sự trùng lặp với các câu hỏi đáp trong tài liệu “100 câu hỏi - đáp về dịch bệnh Covid-19” do Học viện quân y soạn thảo, và sẽ được lọc bỏ ở bước tiền xử lý dữ liệu.
+
+\end{itemize}
+
+
+
+\subsubsection{Giải đáp chính sách online - Cổng thông tin điện tử Chính phủ}
+\begin{itemize}
+\item \textbf{Website:} \url{https://chinhsachonline.chinhphu.vn}
+
+\item \textbf{Giới thiệu:}
+Giải đáp chính sách online là trang thông tin điện tử thuộc Cổng thông tin điện tử Chính phủ Việt Nam. Là nơi các Bộ, Ban, Ngành giải đáp trực tuyến những thắc mắc của người dân về các chính sách và chỉ thị của Chính phủ trong các lĩnh vực y tế, giáo dục, đầu tư,... Trước tình hình dịch bệnh phức tạp, Cổng thông tin điện tử Chính phủ đã bổ sung thêm chuyên mục Hỏi đáp về COVID-19 nhằm tạo điều kiện cho người dân được bày tỏ những thắc mắc của mình~\cite{ref_url9}.
+\item \textbf{Nội dung thu thập:} Bao gồm các thông tin hỏi đáp về COVID-19 và những ảnh hưởng của đại dịch trong các lĩnh vực Giáo dục - Đào tạo, Y tế, Bảo hiểm xã hội, Tài chính - Ngân hàng,...
+
+\end{itemize}
+
+\subsubsection{Hệ thống Y tế Vinmec}
+\begin{itemize}
+\item \textbf{Website:} \url{https://vinmec.com}
+
+\item \textbf{Giới thiệu:}
+Vinmec là hệ thống y tế phi lợi nhuận do Tập đoàn Vingroup đầu tư phát triển từ năm 2012. Tới nay, Vinmec trở thành thương hiệu y tế tư nhân hàng đầu Việt Nam với đầy đủ các cấu phần tương tự các hệ thống y tế hàng đầu thế giới: Bệnh viện đa khoa - Phòng khám - Chuỗi các viện nghiên cứu chuyên sâu - Hệ thống đào tạo chuyên nghiệp~\cite{ref_url6}. Trong bối cảnh dịch COVID-19 đang hoành hành tại Việt Nam, đội ngũ chuyên gia, bác sĩ đầu ngành của Vinmec đã tổng hợp và đăng tải các câu hỏi đáp thường gặp về đại dịch nhằm nâng cao nhận thức của người dân và cộng đồng~\cite{ref_url10}.
+
+\item \textbf{Nội dung thu thập:} Gồm các câu hỏi đáp xoay quanh vấn đề về nguồn gốc COVID-19, cách thức lây nhiễm, triệu chứng, cách phòng bệnh, xét nghiệm, du lịch,...
+
+\end{itemize}
+
+\subsection{Ngôn ngữ lập trình và môi trường lập trình}
+
+\subsubsection{Ngôn ngữ lập trình:} Python
+
+\begin{itemize}
+
+	\item \textbf{Ưu điểm:}
+		\begin{itemize}
+		\item Cú pháp ngắn gọn, dễ hiểu, dễ sử dụng,
+		\item Chạy được trên nhiều hệ điều hành,
+		\item Nhiều thư viện hỗ trợ cho việc cào dữ liệu web như BeautifulSoup, Scrapy,...
+		\item Nhiều thư viện hỗ trợ xử lý dữ liệu văn bản.
+		\end{itemize}
+    
+
+	\item \textbf{Nhược điểm:}
+		\begin{itemize}
+		\item Tốc độ xử lý của Python không nhanh bằng JAVA và C++.
+		\item  Không có vòng lặp \textbf{do…while} và \textbf{switch….case}.
+		\end{itemize}
+
+	\item \textbf{Thư viện sử dụng:} \textit{BeautifulSoup}, \textit{pycpdf}, \textit{request, \textit{re}}
+\end{itemize}
+
+\subsubsection{Môi trường lập trình:} Google Colaboratory
+
+\begin{itemize}
+	\item \textbf{Ưu điểm:} 
+		\begin{itemize}
+		\item Tích hợp sẵn các thư viện Python phổ biến
+		\item Cung cấp tài nguyên về bộ nhớ và không gian lưu trữ.
+		\item Hỗ trợ GPU để tăng tốc độ xử lý và tính toán.
+		\item Miễn phí (khi không sử dụng GPU)
+		\item Hỗ trợ kết nối với Google Drive
+		\end{itemize}
+
+	\item \textbf{Nhược điểm:}
+		\begin{itemize}
+		\item Cần kết nối Internet để có thể sử dụng.
+		\item Tốn thêm phí để sử dụng GPU không giới hạn.
+		\end{itemize}
+\end{itemize}
+
+\subsection{Cách thức thu thập}
+Cách thức thu thập và chuyển đổi dữ liệu từ dạng thô về dạng tidy được thực hiện như sau:
+
+\begin{itemize}
+\item \textbf{Bước 1:} Thu thập câu hỏi và câu trả lời từ dữ liệu thô (Raw Data)
+
+	\vspace{0.2cm}
+	\textbf{Đối với dữ liệu dạng XML:}
+	\begin{itemize}
+	\item \textbf{Bước 1.1:} Duyệt qua tuần tự các đường dẫn đến trang hỏi đáp của các nguồn thu thập, 
+	\item \textbf{Bước 1.2:} Sử dụng hàm \textit{get()} của thư viện \textit{request} để lấy phản hồi từ đường dẫn của trang đang xét.
+	\item \textbf{Bước 1.3:} Sử dụng hàm \textit{BeautifulSoup()} của thư viện \textit{bs4} để lấy nội dung HTML từ phản hồi.
+	\item \textbf{Bước 1.4:} Sử dụng phương thức \textit{find\_all()} để tìm các tag HTML chứa câu hỏi và câu trả lời từ mã nguồn HTML thu được ở Bước 1.3.
+	\item \textbf{Bước 1.5:} Lấy nội dung dạng văn bản bằng cách gọi phương thức \textit{text} của tag tìm được. Câu hỏi và câu trả lời được lưu tạm vào cấu trúc list trong Python.
+	\end{itemize}
+	
+	\vspace{0.2cm}
+	\textbf{Đối với dữ liệu dạng PDF:}
+	\begin{itemize}
+	\item \textbf{Bước 1.1:} Sử dụng hàm \textit{PDF()} của thư viện \textit{pycpdf} để đọc và lấy nội dung từ file pdf.
+	\item \textbf{Bước 1.2:} Duyệt qua tuần tự từng trang trong đối tượng \textit{pycpdf.PDF} thu được ở Bước 1.1.
+	\item \textbf{Bước 1.3:} Sử dụng các hàm xử lý chuỗi thông dụng trong Python như \textit{split()}, \textit{sub()}, \textit{remove()},... để xử lý, nhận diện và tách các câu hỏi và câu trả lời tương ứng ở mỗi trang.
+	\item \textbf{Bước 1.4:}  Lưu câu hỏi và câu trả lời vào cấu trúc list trong Python.
+	\end{itemize}
+	\vspace{0.2cm}
+	\item \textbf{Bước 2:} Gộp các list câu hỏi và câu trả lời tương ứng từ các nguồn, sau đó lưu dưới dạng cấu trúc dataframe hỗ trợ bởi thư viện \textit{pandas}. Dataframe gồm 3 thuộc tính: mã định danh câu hỏi đáp, câu hỏi và câu trả lời.
+	\vspace{0.2cm}
+	\item \textbf{Bước 3:} Xuất bộ dữ liệu hoàn chỉnh dưới dạng file .csv sử dụng phương thức \textit{to\_csv()} của dataframe.
+	
+
+
+\end{itemize}
+
+\section{Tiền xử lý dữ liệu}
+Sau khi thu thập và đưa về dữ liệu dạng tidy data, chúng tôi tiến hành các bước tiền xử lý sau để làm sạch dữ liệu đã thu thập.
+
+\subsection{Loại bỏ các ký tự thừa, các chỉ mục và cụm từ không liên quan }
+\vspace{-0.4cm}
+\begin{table}
+	\setlength{\tabcolsep}{0.5em}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{center}
+	\caption{Ví dụ về lời giải đáp trước và sau khi tiền xử lý.}\label{tab1}
+		\begin{tabular}{ | p{5.75cm} | p{5.75cm} |} 
+			\hline
+    		\textbf{Trước khi tiền xử lý} & \textbf{Sau khi tiền xử lý}\\ 
+			\hline
+			\uline{Bộ Giáo dục và Đào tạo 100 câu hỏi - đáp về phòng, chống dịch bệnh Covid-19 trong các cơ sở giáo dục 36} Sốt là biểu hiện của rất nhiều bệnh có thể có hoặc không liên quan đến bệnh Covid-19...& Sốt là biểu hiện của rất nhiều bệnh có thể có hoặc không liên quan đến bệnh Covid-19... \\ 
+			\hline
+			\uline{Trả lời:} Chúng tôi không có thông tin từ các báo cáo khoa học nào được công bố về mức độ dễ mắc của phụ nữ mang thai...& Chúng tôi không có thông tin từ các báo cáo khoa học nào được công bố về mức độ dễ mắc của phụ nữ mang thai...\\
+			\hline
+			\end{tabular}
+		\end{center}
+\end{table}
+\vspace{-0.8cm}
+Khi thực hiện thu thập dữ liệu từ các trang web và tài liệu pdf, có một số chỉ mục, số thứ tự hoặc các cụm từ không liên quan vô tình được thu thập. Những cụm từ và ký tự thừa này đôi khi khiến cho các câu hỏi đáp không rõ ràng và không truyền tải hết được ý nghĩa nội dung. Do đó, cách tốt nhất là xác định và loại bỏ chúng để bộ dữ liệu trở nên sạch hơn.
+\subsection{Loại bỏ các câu hỏi đáp bị trùng lặp}
+\vspace{-0.4cm}
+\begin{table}
+	\setlength{\tabcolsep}{0.5em}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{center}
+	\caption{Ví dụ về câu hỏi đáp bị trùng lặp}\label{tab2}
+		\begin{tabular}{ | p{5.75cm} | p{5.75cm} |} 
+			\hline
+    		\textbf{Câu hỏi} & \textbf{Trả lời}\\ 
+			\hline
+			Hiện nay các biện pháp chính để điều trị bệnh do Covid-19
+			là gì?& Do chưa có thuốc điều trị đặc hiệu, nên việc điều trị hỗ trợ
+			nâng đỡ thể trạng, sức đề kháng và điều trị triệu chứng là chủ
+			yếu. Cần theo dõi và phát hiện sớm, xử lý kịp thời các ca
+			bệnh nặng, nguy kịch như suy hô hấp hoặc suy các tạng khác.\\ 
+			\hline
+			Các biện pháp chính để điều trị bệnh Covid-19 là gì?& Hiện nay, do chưa có thuốc điều trị đặc hiệu nên việc điều trị chủ yếu là hỗ trợ nâng đỡ thể trạng, sức đề kháng và điều trịtriệu chứng.\\
+			\hline
+			\end{tabular}
+		\end{center}
+\end{table}
+\vspace{-0.8cm}
+Tuy bộ dữ liệu được thu thập từ nhiều nguồn khác nhau, nhưng đều xoay quanh chủ đề về dịch bệnh,
+ do đó khó tránh khỏi sự trùng lặp, không nhất quán. Phần lớn các nội dung bị trùng lặp nằm ở 2 quyển tài liệu do Học viện Quân y soạn thảo.
+
+Để đảm bảo tính nhất quán cho bộ dữ liệu, chúng tôi tiến hành duyệt qua các câu hỏi đáp và loại bỏ nếu chúng bị trùng lặp với những câu hỏi đáp đã có trong bộ dữ liệu.
+
+\subsection{Loại bỏ các câu hỏi đáp không phù hợp}
+\vspace{-0.4cm}
+\begin{table}
+	\setlength{\tabcolsep}{0.5em}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{center}
+	\caption{Ví dụ về một số câu hỏi đáp không phù hợp}\label{tab3}
+		\begin{tabular}{ | p{5.75cm} | p{5.75cm} |} 
+			\hline
+    		\textbf{Câu hỏi} & \textbf{Trả lời}\\ 
+			\hline
+			Có những tài liệu nào về vấn đề chôn cất cựu chiến binh Người Mỹ Da Đỏ/Người Alaska Bản Địa? & Vợ/chồng và gia đình Cựu Chiến Binh Người Mỹ Da Đỏ/Người Alaska Bản Địa có thể đủ điều kiện được hỗ trợ chôn cất...\\ 
+			\hline
+				"Luồng không khí có định hướng" nghĩa là gì? Chúng ta nên sử dụng luồng không khí này ở đâu và như thế nào?& Luồng khí có định hướng là một khái niệm thông gió bảo vệ trong đó luồng không khí chuyển động theo hướng từ sạch đến kém sạch...\\
+			\hline
+				Mất bao lâu để hòa tan hàm lượng các loại hạt tạp gây lây nhiễm trong một căn phòng sau khi được tạo ra?& Khi những giọt nước lớn (từ 100 micrometer [$\mu$m] trở lên) sẽ lắng xuống các bề mặt xung quanh trong vài giây, những hạt nhỏ hơn có thể ngưng đọng trong không khí lâu hơn. Có thể mất vài phút để các hạt có kích thước 10 $\mu$m lắng xuống, trong lúc các hạt có kích thước từ 5 $\mu$m trở xuống có thể không lắng xuống trong nhiều giờ hoặc nhiều ngày...\\
+			\hline
+			\end{tabular}
+		\end{center}
+\end{table}
+\vspace{-0.8cm}
+Có một số câu hỏi đáp do CDC (Hoa Kỳ) soạn thảo chưa phù hợp với văn hóa, lối sống con người Việt Nam nên được chúng tôi loại bỏ, do các nội dung này dựa trên các chính sách áp dụng tại Hoa Kỳ và chỉ đơn thuần được dịch sang tiếng Việt. 
+
+Ngoài ra còn có những câu hỏi đáp mang nặng tính thuật ngữ, khó hiểu cũng bị loại bỏ ra khỏi bộ dữ liệu.
+
+\section{Bộ dữ liệu tidy data}
+
+Sau khi quá trình thu nhập từ các nguồn thông tin và thực hiện tiền xử lí, kết quả thu được là bộ dữ liệu hoàn chỉnh về các câu hỏi và trả lời bằng ngôn ngữ tiếng Việt liên quan tới các vấn đề xoay quanh đại dịch COVID-19 gồm 620 điểm dữ liệu với 3 thuộc tính. Dưới đây là ví dụ các điểm dữ liệu được trích ra từ bộ dữ liệu và codebook của bộ dữ liệu.
+
+\begin{table}
+	\setlength{\tabcolsep}{0.5em}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{center}
+	\caption{Ví dụ về các điểm dữ liệu trong bộ dữ liệu}\label{tab4}
+		\begin{tabular}{ | p{1.25cm} | p{5cm} | p{5cm} |} 
+			\hline
+    		\textbf{id} & \textbf{Question} & \textbf{Answer}\\ 
+			\hline
+			QA1 & Tại sao bệnh này lại được gọi là bệnh vi-rút corona 2019, COVID-19?&Vào ngày 11 tháng 2 năm 2020, Tổ Chức Y Tế Thế Giới đã công bố tên chính thức cho căn bệnh gây ra đại dịch do vi-rút corona mới 2019 gây ra, được phát hiện lần đầu tại Vũ Hán, Trung Quốc. Tên mới của bệnh này là bệnh vi-rút corona 2019, viết tắt là COVID-19. Trong chữ COVID-19, 'CO' viết tắt của từ 'corona,' 'VI' viết tắt của từ 'vi-rút,' và 'D' là bệnh. Trước đó, căn bệnh này được gọi là "vi-rút corona mới 2019" hoặc "nCoV-2019".
+			\\ 
+			\hline
+			QA122&Khẩu trang vải có giống như trang bị bảo hộ cá nhân (PPE) không?&Không, khẩu trang vải không phải là trang bị bảo hộ cá nhân (PPE). Các loại khẩu trang này không phải là mặt nạ và không phải là vật dụng thay thế thích hợp cho các trang bị bảo hộ đó tại nơi làm việc có khuyến cáo hoặc bắt buộc sử dụng mặt nạ để bảo vệ đường hô hấp.
+			\\
+			\hline
+			QA339&Nên duy trì chế độ ăn như thế nào để tăng sức đề kháng phòng chống Covid-19?&Không có chế độ ăn đặc hiệu để tăng sức đề kháng riêng với Covid-19  
+			Nên duy trì chế độ ăn hợp lý, đủ chất đinh dưỡng, có thể bổ sung vitamin để tăng sức đề kháng chung Do chưa loại trừ khả năng lây qua thức ăn nên thực hiện ""ăn chín uống sôi"" Tuyệt đối không ăn đồ ăn sống như tiết canh, thịt sống, đặc biệt là tiết canh, thịt sống của động vật hoang dã\\
+			\hline
+			QA437&Tôi đã khai báo y tế online trên trang khai báo y tế của Bộ Y tế, khi đã khai báo xong thì tôi có cần phải đến UBND xã để khai báo lại không?&Bộ Y tế trả lời vấn đề này như sau:Theo hướng dẫn của Bộ Y tế thì ông chỉ cần khai báo y tế online trên website: tokhaiyte.vn để phục vụ việc giám sát, truy vết nếu có nghi ngờ mắc Covid-19. Tuy nhiên, do việc áp dụng công nghệ thông tin tại các địa phương có thể chưa được triển khai thống nhất nên đề nghị ông liên hệ với chính quyền địa phương nơi đến để thực hiện.\\
+			\hline
+			QA607& Covid-19 có thể lây truyền qua nước uống không? &Covid-19 không thể lây truyền qua đường nước uống được. Virus được phát tán tới những người tiếp xúc gần thông qua giọt bắn, nhưng mà không qua nước uống.\\
+			\hline
+			\end{tabular}
+		\end{center}
+\end{table}
+\begin{table}[H]
+	\setlength{\tabcolsep}{0.5em}
+	\renewcommand{\arraystretch}{1.4}
+	\begin{center}
+	\caption{Codebook của bộ dữ liệu}\label{tab5}
+		\begin{tabular}{ | p{2.25cm} | p{9.45cm} |} 
+			\hline
+    		\textbf{Thông tin} & \textbf{Nội dung}\\ 
+			\hline
+			Tên bộ dữ liệu& Bộ dữ liệu Hỏi đáp về COVID-19 cho Tiếng Việt (Vietnamese COVID-19 Question And Answering Dataset)\\			
+			\hline
+			\multirow{1}{*}{Nguồn thu thập} &Từ 6 nguồn: \\
+										    & 1. CDC Hoa Kỳ:\\& \url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/faq.html}\\
+			                                &2. VNVC:\\& \url{https://vnvc.vn/cau-hoi-thuong-gap-covid-19/}\\
+											&3. Học viện quân y, Cục Quân y:\\& \url{http://asttmoh.vn/wp-content/uploads/2020/03/100-cau-hoi-dap-ve-dich-Covid-19-Cuc-QY-Final.pdf}\\
+											&4. Bộ Giáo dục \& Đào tạo:\\& \url{https://moet.gov.vn/content/tintuc/Lists/News/Attachments/6507/1582974693976755.pdf}\\
+											&5. Giải đáp chính sách online - Cổng thông tin điện tử Chính phủ:\\& \url{https://chinhsachonline.chinhphu.vn/Cau-hoi-chon-loc/Hoi-dap-ve-dich-COVID19/14.vgp}\\
+											&6. Vinmec:\\& \url{https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dich-2019-ncov/tu-van-bac-si/}\\
+											
+			\hline
+			Cách thức thu thập & Xác định, xử lý và trích xuất các câu hỏi và câu trả lời tương ứng từ mã nguồn HTML của các trang web và tài liệu pdf.\\ 
+			\hline
+			Số điểm dữ liệu & 620\\
+			\hline
+			Số thuộc tính & 3\\
+			\hline
+			\multirow{2}{2.25cm}{Thông tin thuộc tính}& \textbf{id:} Mã định danh câu hỏi đáp\\
+													  & \textbf{Question:} Nội dung câu hỏi\\
+													  & \textbf{Answer:} Nội dung câu trả lời\\
+			\hline
+			\end{tabular}
+		\end{center}
+\end{table}
+
+\section{Kết luận và hướng phát triển}
+\subsection{Kết luận}
+Trong bài báo cáo này, nhóm chúng tôi đã trình bày quá trình xây dựng bộ dữ liệu về các câu hỏi đáp liên quan đến COVID-19, bao gồm các bước thu thập, chuyển đổi dữ liệu thô sang dữ liệu tidy và các bước tiền xử lý để làm sạch dữ liệu. Bộ dữ liệu thu được gồm 620 điểm dữ liệu và 3 thuộc tính. Dù đảm bảo được tính kịp thời, đầy đủ, tin cậy và nhất quán, tuy nhiên trong bộ dữ liệu vẫn còn một số ít câu hỏi đáp chưa rõ ý nghĩa, dài dòng cần được điều chỉnh thêm để hoàn thiện hơn về mặt logic, đảm bảo tính chính xác và dễ hiểu.
+
+\subsection{Hướng phát triển}
+Từ kết quả đã có, trong tương lai nhóm chúng tôi sẽ thực hiện các điều chỉnh về mặt ngữ nghĩa, đồng thời bổ sung thông tin về vấn đề vắc-xin COVID-19 đang được quan tâm hàng đầu hiện nay. Qua đó, bộ dữ liệu được tăng tính kịp thời, tin cậy và chính xác hơn để phù hợp với tình hình dịch bệch đang còn diễn biến phức tạp trên thế giới và tại Việt Nam.
+
+Nhóm chúng tôi cũng sẽ tiếp tục xây dựng và mở rộng kích thước của bộ dữ liệu để sử dụng trong các bài toán về Xử lý Ngôn ngữ Tự nhiên trên ngôn ngữ tiếng Việt. Một số bài toán có thể sử dụng trên bộ dữ liệu như: Bài toán Đọc hiểu tự động (Machine Reading Comprehension hay MRC), Bài toán Hỏi đáp tự động (Automatic Question Answering), Bài toán Xây dựng Chatbot và Trợ lý ảo, Bài toán Gắn thẻ câu hỏi tự động (Automatic Question Tagging)...
+ 
+
+\begin{thebibliography}{8}
+
+\bibitem{ref_url1}
+Trang chủ CDC Hoa Kỳ, \url{https://vietnamese.cdc.gov}.
+
+\bibitem{ref_url2}
+Trang chủ Hệ thống tiêm chủng VNVC - Công ty cổ phần Vacxin Việt Nam, \url{https://vnvc.vn/}
+
+\bibitem{ref_url3}
+Trang chủ Học viện Quân y, \url{http://hocvienquany.vn/Portal/TrangChu.html}
+
+\bibitem{ref_url4}
+Trang chủ Bộ Giáo dục và Đào tạo, \url{https://moet.gov.vn/}
+
+\bibitem{ref_url5}
+Trang chủ Giải đáp chính sách online - Cổng thông tin điện tử Chính phủ,\\ \url{https://chinhsachonline.chinhphu.vn}
+
+\bibitem{ref_url6}
+Trang chủ Bệnh viện Đa khoa Quốc tế Vinmec | Vinmec, \url{https://vinmec.com}
+
+\bibitem{ref_url7}
+Câu hỏi thường gặp về vi-rút corona (COVID-19) | CDC, \url{https://vietnamese.cdc.gov/coronavirus/2019-ncov/faq.html}
+
+\bibitem{ref_url8}
+[GIẢI ĐÁP] 101 CÂU HỎI THƯỜNG GẶP VỀ VIRUS CORONA (2019-NCOV), \url{https://vnvc.vn/cau-hoi-thuong-gap-covid-19/}
+
+\bibitem{ref_url9}
+HỎI ĐÁP VỀ DỊCH COVID-19, \url{https://chinhsachonline.chinhphu.vn/Cau-hoi-chon-loc/Hoi-dap-ve-dich-COVID19/14.vgp}
+
+\bibitem{ref_url10}
+Hỏi - đáp về dịch Covid - 19 | Vinmec, \url{https://www.vinmec.com/vi/tin-tuc/thong-tin-suc-khoe/dich-2019-ncov/tu-van-bac-si/}
+
+\bibitem{ref_book1}
+Học viện Quân y, Cục Quân y: 100 CÂU HỎI ĐÁP VỀ DỊCH BỆNH COVID-19. Hà Nội (17/02/2020)
+
+\bibitem{ref_book2}
+Học viện Quân y, Bộ Giáo dục \& Đào tạo: 100 CÂU HỎI ĐÁP VỀ PHÒNG, CHỐNG DỊCH BỆNH COVID-19 TRONG CÁC CƠ SỞ GIÁO DỤC. Hà Nội (24/02/2020)
+
+\end{thebibliography}
+\end{document}
